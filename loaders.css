@@ -1,0 +1,337 @@
+
+  .targetloader, .barsloader, .dottedloader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .dottedloader_dot {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    border-radius: 50%;
+    background-color: #00bcd4;
+    -webkit-animation: dotjump;
+    animation: dotjump;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .dottedloader .dottedloader_dot:nth-child(2) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  
+  .dottedloader .dottedloader_dot:nth-child(3) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  
+  .dottedloader--small .dottedloader_dot,
+  .simpleloader--small .simpleloader_dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .dottedloader--big .dottedloader_dot,
+  .simpleloader--big .simpleloader_dot {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .dottedloader--fast .dottedloader_dot {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  
+  .dottedloader--slow .dottedloader_dot {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .spinnerloader {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #00bcd4;
+    border-right-color: transparent !important;
+    -webkit-animation: spinPaused;
+    animation: spinPaused;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+    
+  .barsloader {
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 55px;
+  }
+  
+  .barsloader_bar {
+    width: 4px;
+    height: 4px;
+    background-color: #00bcd4;
+    border-radius: 6px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    -webkit-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-animation: barExpand;
+    animation: barExpand;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  
+  .barsloader .barsloader_bar:nth-child(2),
+  .simpleloader .simpleloader_dot:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  
+  .barsloader .barsloader_bar:nth-child(3),
+  .simpleloader .simpleloader_dot:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  
+  .barsloader .barsloader_bar:nth-child(4),
+  .simpleloader .simpleloader_dot:nth-child(4) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .barsloader .barsloader_bar:nth-child(5),
+  .simpleloader .simpleloader_dot:nth-child(5) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  
+  .barsloader .barsloader_bar:nth-child(6),
+  .simpleloader .simpleloader_dot:nth-child(6) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .barsloader .barsloader_bar:nth-child(7),
+  .simpleloader .simpleloader_dot:nth-child(7) {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
+  
+  .targetloader {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    -webkit-filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.1));
+  }
+  
+  .targetloader_target {
+    position: absolute;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #00bcd4; 
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    -webkit-animation: spinTarget;
+    animation: spinTarget;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+  }
+  
+  .targetloader .targetloader_target:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 0px;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+  }
+  
+  .targetloader .targetloader_target:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 10px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+  }
+  
+  .targetloader .targetloader_target:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  
+  .simpleloader {
+    display: inline-block;
+  }
+  
+  .simpleloader_dot {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #00bcd4;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    opacity: 0;
+    -webkit-animation: simpleloader;
+    animation: simpleloader;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes simpleloader {
+    0%, 50% {
+      opacity: 0.2;
+    }
+    51%, 100% {
+      opacity: 1;
+    }
+  }
+  @keyframes simpleloader {
+    0%, 50% {
+      opacity: 0.2;
+    }
+    51%, 100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes dotjump {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -12px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  @keyframes dotjump {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -12px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  @-webkit-keyframes spinPaused {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    33% {
+      -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      transform: rotate(225deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spinPaused {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    33% {
+      -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      transform: rotate(225deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes barExpand {
+    0%, 50% {
+      height: 4px;
+    }
+    75% {
+      height: 50px;
+    }
+    100% {
+      height: 4px;
+    }
+  }
+  @keyframes barExpand {
+    0%, 50% {
+      height: 4px;
+    }
+    75% {
+      height: 50px;
+    }
+    100% {
+      height: 4px;
+    }
+  }
+  @-webkit-keyframes spinTarget {
+    0%, 30% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spinTarget {
+    0%, 30% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  
